@@ -1,0 +1,10 @@
+CREATE DATABASE UrlShortener;
+
+USE UrlShortener;
+
+CREATE TABLE Url (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    shortid VARCHAR(14) NOT NULL,
+    href VARCHAR(1024) NOT NULL,
+    INDEX(shortid)
+);
